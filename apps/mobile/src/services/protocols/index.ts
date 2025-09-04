@@ -1,7 +1,7 @@
 // Protocols service
 
 import { Protocol } from '@/domain/types';
-import { mmkvStorage } from '@/services/storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export class ProtocolsService {
   private static instance: ProtocolsService;
@@ -17,7 +17,7 @@ export class ProtocolsService {
   // Get all protocols
   async getAllProtocols(): Promise<Protocol[]> {
     try {
-      const protocolsJson = mmkvStorage.getString(this.protocolsKey);
+      const protocolsJson = await AsyncStorage.getItem(this.protocolsKey);
       if (protocolsJson) {
         return JSON.parse(protocolsJson);
       }
@@ -51,7 +51,7 @@ export class ProtocolsService {
         protocols.push(protocol);
       }
       
-      mmkvStorage.set(this.protocolsKey, JSON.stringify(protocols));
+      await AsyncStorage.setItem(this.protocolsKey, JSON.stringify(protocols));
       return true;
     } catch (error) {
       console.error('Error saving protocol:', error);
@@ -64,7 +64,7 @@ export class ProtocolsService {
     try {
       const protocols = await this.getAllProtocols();
       const filtered = protocols.filter(protocol => protocol.id !== id);
-      mmkvStorage.set(this.protocolsKey, JSON.stringify(filtered));
+      await AsyncStorage.setItem(this.protocolsKey, JSON.stringify(filtered));
       return true;
     } catch (error) {
       console.error(`Error deleting protocol with id ${id}:`, error);

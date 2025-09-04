@@ -1,10 +1,10 @@
-// Storage service - wrapper for MMKV and SQLite
+// Storage service - wrapper for AsyncStorage and SQLite
 
-import { MMKV } from 'react-native-mmkv';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as SQLite from 'expo-sqlite';
 
-// Initialize MMKV
-export const mmkvStorage = new MMKV();
+// Initialize AsyncStorage for key-value storage
+// (We're using AsyncStorage instead of MMKV for Expo Go compatibility)
 
 // Database initialization
 let db: SQLite.SQLiteDatabase | null = null;
@@ -95,22 +95,23 @@ const createTables = async (): Promise<void> => {
   }
 };
 
-// MMKV helper functions
-export const mmkvSet = (key: string, value: any): void => {
-  mmkvStorage.set(key, JSON.stringify(value));
+// MMKV helper functions reimplemented with AsyncStorage
+export const mmkvSet = async (key: string, value: any): Promise<void> => {
+  await AsyncStorage.setItem(key, JSON.stringify(value));
 };
 
-export const mmkvGet = (key: string): any => {
-  const value = mmkvStorage.getString(key);
+export const mmkvGet = async (key: string): Promise<any> => {
+  const value = await AsyncStorage.getItem(key);
   return value ? JSON.parse(value) : null;
 };
 
-export const mmkvDelete = (key: string): void => {
-  mmkvStorage.delete(key);
+export const mmkvDelete = async (key: string): Promise<void> => {
+  await AsyncStorage.removeItem(key);
 };
 
-export const mmkvHasKey = (key: string): boolean => {
-  return mmkvStorage.contains(key);
+export const mmkvHasKey = async (key: string): Promise<boolean> => {
+  const value = await AsyncStorage.getItem(key);
+  return value !== null;
 };
 
 // Database helper functions

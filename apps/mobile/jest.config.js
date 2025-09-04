@@ -15,4 +15,10 @@ module.exports = {
     '/node_modules/',
     '/e2e/',
   ],
+  setupFiles: [
+    './node_modules/react-native-gesture-handler/jestSetup.js',
+  ],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
 };

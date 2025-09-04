@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntryScreen Snapshot renders correctly with existing user ID 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "padding": 16,
+      },
+      {
+        "backgroundColor": "#FFFFFF",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 16,
+          "marginBottom": 8,
+        },
+        {
+          "color": "#000000",
+          "fontFamily": "monospace",
+        },
+      ]
+    }
+  >
+    Assigning ID...
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 16,
+          "marginBottom": 8,
+        },
+        {
+          "color": "#000000",
+          "fontFamily": "monospace",
+        },
+      ]
+    }
+  >
+    User#123
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "fontSize": 16,
+          "marginBottom": 24,
+        },
+        {
+          "color": "#000000",
+          "fontFamily": "monospace",
+        },
+      ]
+    }
+  >
+    Допуск предоставлен.
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+        "padding": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontSize": 16,
+          },
+          {
+            "color": "#000000",
+            "fontFamily": "monospace",
+          },
+        ]
+      }
+    >
+      [ Войти ]
+    </Text>
+  </View>
+</View>
+`;

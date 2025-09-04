@@ -56,6 +56,25 @@ export interface StateVector extends Stats {
   failures7d: number;
 }
 
+// Tasks and messages for Today screen
+export interface TaskItem {
+  id: string;
+  title: string;
+  domain: Domain;
+  done: boolean; // Indicates if task is completed
+  completedAt?: string;
+  createdAt: string;
+  estimatedDuration: number; // in minutes
+}
+
+export interface Message {
+  id: string;
+  content: string;
+  role: 'user' | 'coach';
+  timestamp: string;
+  type: 'instruction' | 'suggestion' | 'feedback' | 'reminder';
+}
+
 export interface Protocol {
   id: string;
   title: string;
@@ -77,3 +96,5 @@ export interface Scenario {
   createdAt: string;
   updatedAt: string;
 }
+
+

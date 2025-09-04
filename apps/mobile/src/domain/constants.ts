@@ -40,4 +40,5 @@ export const ROUTES = {
   ENTRY: 'Entry',
   ARCHIVE: 'Archive',
   DOCS: 'Docs',
+  STYLEGUIDE: 'StyleGuide',
 } as const;

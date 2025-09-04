@@ -1,0 +1,3229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyleGuideScreen Snapshot renders correctly 1`] = `
+<RCTScrollView
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderBottomColor": "#AAAAAA",
+          "borderBottomWidth": 1,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontSize": 30,
+            "lineHeight": 1.25,
+            "marginBottom": 12,
+          }
+        }
+      >
+        Style Guide
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#000000",
+            "borderRadius": 4,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingHorizontal": 12,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#FFFFFF",
+              "fontSize": 16,
+              "fontWeight": "500",
+            }
+          }
+        >
+          Switch to Dark Theme
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderBottomColor": "#AAAAAA",
+          "borderBottomWidth": 1,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontSize": 24,
+            "lineHeight": 1.25,
+            "marginBottom": 12,
+          }
+        }
+      >
+        Color Palette
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "lineHeight": 1.5,
+            }
+          }
+        >
+          Current Theme: 
+          Light
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#000000",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              primary
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #000000
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#111111",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              primaryDark
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #111111
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#666666",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              primaryLight
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #666666
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              secondary
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #AAAAAA
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#666666",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              secondaryDark
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #666666
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              secondaryLight
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #FFFFFF
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              background
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #FFFFFF
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              backgroundSecondary
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #AAAAAA
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#000000",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              text
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #000000
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#111111",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              textSecondary
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #111111
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#666666",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              textTertiary
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #666666
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              border
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #AAAAAA
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#666666",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              borderDark
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #666666
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#000000",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              success
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #000000
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#666666",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              warning
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #666666
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#000000",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              error
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #000000
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#000000",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              interactive
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #000000
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#111111",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              interactiveHover
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #111111
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#666666",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "margin": "1%",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 0.2,
+              "shadowRadius": 2,
+              "width": "48%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              interactiveActive
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.5,
+                  "marginBottom": 6,
+                  "textAlign": "center",
+                }
+              }
+            >
+              #666666
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "System",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Tap to copy
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderBottomColor": "#AAAAAA",
+          "borderBottomWidth": 1,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontSize": 24,
+            "lineHeight": 1.25,
+            "marginBottom": 12,
+          }
+        }
+      >
+        Typography
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "gap": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#AAAAAA",
+              "borderBottomWidth": 1,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 30,
+                "lineHeight": 1.25,
+                "marginBottom": 8,
+              }
+            }
+          >
+            The quick brown fox jumps over the lazy dog
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "lineHeight": 1.375,
+                "marginBottom": 6,
+              }
+            }
+          >
+            h1
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Font Size: 30 | Line Height: 1.25
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#AAAAAA",
+              "borderBottomWidth": 1,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 24,
+                "lineHeight": 1.25,
+                "marginBottom": 8,
+              }
+            }
+          >
+            The quick brown fox jumps over the lazy dog
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "lineHeight": 1.375,
+                "marginBottom": 6,
+              }
+            }
+          >
+            h2
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Font Size: 24 | Line Height: 1.25
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#AAAAAA",
+              "borderBottomWidth": 1,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 20,
+                "lineHeight": 1.375,
+                "marginBottom": 8,
+              }
+            }
+          >
+            The quick brown fox jumps over the lazy dog
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "lineHeight": 1.375,
+                "marginBottom": 6,
+              }
+            }
+          >
+            h3
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Font Size: 20 | Line Height: 1.375
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#AAAAAA",
+              "borderBottomWidth": 1,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "lineHeight": 1.5,
+                "marginBottom": 8,
+              }
+            }
+          >
+            The quick brown fox jumps over the lazy dog
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "lineHeight": 1.375,
+                "marginBottom": 6,
+              }
+            }
+          >
+            body
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Font Size: 16 | Line Height: 1.5
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#AAAAAA",
+              "borderBottomWidth": 1,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+                "marginBottom": 8,
+              }
+            }
+          >
+            The quick brown fox jumps over the lazy dog
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "lineHeight": 1.375,
+                "marginBottom": 6,
+              }
+            }
+          >
+            caption
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Font Size: 14 | Line Height: 1.375
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderBottomColor": "#AAAAAA",
+              "borderBottomWidth": 1,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "monospace",
+                "fontSize": 14,
+                "lineHeight": 1.5,
+                "marginBottom": 8,
+              }
+            }
+          >
+            The quick brown fox jumps over the lazy dog
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "lineHeight": 1.375,
+                "marginBottom": 6,
+              }
+            }
+          >
+            mono
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Font Size: 14 | Line Height: 1.5
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderBottomColor": "#AAAAAA",
+          "borderBottomWidth": 1,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontSize": 24,
+            "lineHeight": 1.25,
+            "marginBottom": 12,
+          }
+        }
+      >
+        Component Library
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "lineHeight": 1.375,
+              "marginBottom": 12,
+            }
+          }
+        >
+          ThemedView
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "marginBottom": 12,
+              "padding": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "#666666",
+                "borderRadius": 4,
+                "padding": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "lineHeight": 1.5,
+                }
+              }
+            >
+              Themed View Example
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "color": "#000000",
+              "fontFamily": "monospace",
+              "fontSize": 14,
+              "lineHeight": 1.5,
+              "padding": 8,
+            }
+          }
+        >
+          &lt;ThemedView style={styles.container}&gt;
+  &lt;ThemedText&gt;Content&lt;/ThemedText&gt;
+&lt;/ThemedView&gt;
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "lineHeight": 1.375,
+              "marginBottom": 12,
+            }
+          }
+        >
+          ThemedText
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "marginBottom": 12,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 30,
+                "lineHeight": 1.25,
+              }
+            }
+          >
+            Heading 1
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 24,
+                "lineHeight": 1.25,
+              }
+            }
+          >
+            Heading 2
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 20,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Heading 3
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "lineHeight": 1.5,
+              }
+            }
+          >
+            Body Text
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "lineHeight": 1.375,
+              }
+            }
+          >
+            Caption Text
+          </Text>
+        </View>
+        <Text
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "color": "#000000",
+              "fontFamily": "monospace",
+              "fontSize": 14,
+              "lineHeight": 1.5,
+              "padding": 8,
+            }
+          }
+        >
+          &lt;ThemedText type="h1"&gt;Heading 1&lt;/ThemedText&gt;
+&lt;ThemedText type="body"&gt;Body Text&lt;/ThemedText&gt;
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "lineHeight": 1.375,
+              "marginBottom": 12,
+            }
+          }
+        >
+          ThemedButton
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "marginBottom": 12,
+              "padding": 12,
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#000000",
+                "borderRadius": 4,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 12,
+                "paddingVertical": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Click Me
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "color": "#000000",
+              "fontFamily": "monospace",
+              "fontSize": 14,
+              "lineHeight": 1.5,
+              "padding": 8,
+            }
+          }
+        >
+          &lt;ThemedButton 
+  title="Click Me" 
+  onPress={handlePress} 
+/&gt;
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "lineHeight": 1.375,
+              "marginBottom": 12,
+            }
+          }
+        >
+          ThemedInput
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "marginBottom": 12,
+              "padding": 12,
+            }
+          }
+        >
+          <TextInput
+            onChangeText={[Function]}
+            placeholder="Enter text here"
+            style={
+              {
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#AAAAAA",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "color": "#000000",
+                "fontSize": 16,
+                "height": 44,
+                "paddingHorizontal": 12,
+                "paddingVertical": 8,
+              }
+            }
+            value=""
+          />
+        </View>
+        <Text
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "color": "#000000",
+              "fontFamily": "monospace",
+              "fontSize": 14,
+              "lineHeight": 1.5,
+              "padding": 8,
+            }
+          }
+        >
+          &lt;ThemedInput 
+  value={value}
+  onChangeText={setValue}
+  placeholder="Enter text"
+/&gt;
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "lineHeight": 1.375,
+              "marginBottom": 12,
+            }
+          }
+        >
+          ThemedCard
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "marginBottom": 12,
+              "padding": 12,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#AAAAAA",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "margin": 12,
+                "padding": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                  "lineHeight": 1.5,
+                }
+              }
+            >
+              Card Content
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "color": "#000000",
+              "fontFamily": "monospace",
+              "fontSize": 14,
+              "lineHeight": 1.5,
+              "padding": 8,
+            }
+          }
+        >
+          &lt;ThemedCard&gt;
+  &lt;ThemedText&gt;Card Content&lt;/ThemedText&gt;
+&lt;/ThemedCard&gt;
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "marginBottom": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "lineHeight": 1.375,
+              "marginBottom": 12,
+            }
+          }
+        >
+          ThemedDivider
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "marginBottom": 12,
+              "padding": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "lineHeight": 1.5,
+              }
+            }
+          >
+            Content Above
+          </Text>
+          <View
+            style={
+              {
+                "backgroundColor": "#AAAAAA",
+                "height": 1,
+                "width": "100%",
+              }
+            }
+          />
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 16,
+                "lineHeight": 1.5,
+              }
+            }
+          >
+            Content Below
+          </Text>
+        </View>
+        <Text
+          style={
+            {
+              "backgroundColor": "#AAAAAA",
+              "borderRadius": 4,
+              "color": "#000000",
+              "fontFamily": "monospace",
+              "fontSize": 14,
+              "lineHeight": 1.5,
+              "padding": 8,
+            }
+          }
+        >
+          &lt;ThemedText&gt;Content Above&lt;/ThemedText&gt;
+&lt;ThemedDivider /&gt;
+&lt;ThemedText&gt;Content Below&lt;/ThemedText&gt;
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderBottomColor": "#AAAAAA",
+          "borderBottomWidth": 1,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontSize": 24,
+            "lineHeight": 1.25,
+            "marginBottom": 12,
+          }
+        }
+      >
+        Responsive Behavior
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "#FFFFFF",
+            "gap": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "lineHeight": 1.5,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Current Screen Width: 
+          750
+          px
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "lineHeight": 1.5,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Detected Screen Type: 
+          mobile
+        </Text>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#000000",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "flex": 1,
+                "margin": 12,
+                "marginHorizontal": 8,
+                "padding": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 20,
+                  "lineHeight": 1.375,
+                  "marginBottom": 6,
+                }
+              }
+            >
+              Mobile
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#666666",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.375,
+                  "marginBottom": 6,
+                }
+              }
+            >
+              0
+              px - 
+              767px
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "lineHeight": 1.375,
+                }
+              }
+            >
+              Current
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#AAAAAA",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "flex": 1,
+                "margin": 12,
+                "marginHorizontal": 8,
+                "padding": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 20,
+                  "lineHeight": 1.375,
+                  "marginBottom": 6,
+                }
+              }
+            >
+              Tablet
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#666666",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.375,
+                  "marginBottom": 6,
+                }
+              }
+            >
+              768
+              px - 
+              1023px
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#AAAAAA",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "flex": 1,
+                "margin": 12,
+                "marginHorizontal": 8,
+                "padding": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontSize": 20,
+                  "lineHeight": 1.375,
+                  "marginBottom": 6,
+                }
+              }
+            >
+              Desktop
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#666666",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "lineHeight": 1.375,
+                  "marginBottom": 6,
+                }
+              }
+            >
+              1024
+              px - 
+              ∞
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "marginTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "System",
+                "fontSize": 20,
+                "lineHeight": 1.375,
+                "marginBottom": 12,
+              }
+            }
+          >
+            Responsive Spacing Example
+          </Text>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "flexDirection": "row",
+                "justifyContent": "space-around",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "backgroundColor": "#000000",
+                  "borderRadius": 4,
+                  "height": 40,
+                  "margin": 6,
+                  "width": 40,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "backgroundColor": "#000000",
+                  "borderRadius": 4,
+                  "height": 40,
+                  "margin": 8,
+                  "width": 40,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "backgroundColor": "#000000",
+                  "borderRadius": 4,
+                  "height": 40,
+                  "margin": 12,
+                  "width": 40,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "backgroundColor": "#000000",
+                  "borderRadius": 4,
+                  "height": 40,
+                  "margin": 16,
+                  "width": 40,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
