@@ -1,65 +1,65 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Alert } from 'react-native';
 import { useTheme } from '@/theming/hooks';
-import { protocolsService } from '@/services/protocols';
-import { Protocol } from '@/domain/types';
+import { scenariosService } from '@/services/scenarios';
+import { Scenario } from '@/domain/types';
 import { RouteProp, useRoute, useNavigation } from '@react-navigation/native';
 
-type ProtocolDetailRouteProp = RouteProp<{
-  ProtocolDetail: { protocolId: string };
-}, 'ProtocolDetail'>;
+type ScenarioDetailRouteProp = RouteProp<{
+  ScenarioDetail: { scenarioId: string };
+}, 'ScenarioDetail'>;
 
-export const ProtocolDetailScreen = () => {
+export const ScenarioDetailScreen = () => {
   const { colors } = useTheme();
-  const route = useRoute<ProtocolDetailRouteProp>();
+  const route = useRoute<ScenarioDetailRouteProp>();
   const navigation = useNavigation();
-  const { protocolId } = route.params;
+  const { scenarioId } = route.params;
   
-  const [protocol, setProtocol] = useState<Protocol | null>(null);
+  const [scenario, setScenario] = useState<Scenario | null>(null);
   const [loading, setLoading] = useState(true);
   const [currentStep, setCurrentStep] = useState(0);
   const [isExecuting, setIsExecuting] = useState(false);
 
   useEffect(() => {
-    loadProtocol();
-  }, [protocolId]);
+    loadScenario();
+  }, [scenarioId]);
 
-  const loadProtocol = async () => {
+  const loadScenario = async () => {
     try {
       setLoading(true);
-      const loadedProtocol = await protocolsService.getProtocolById(protocolId);
-      setProtocol(loadedProtocol);
+      const loadedScenario = await scenariosService.getScenarioById(scenarioId);
+      setScenario(loadedScenario);
     } catch (error) {
-      console.error('Error loading protocol:', error);
-      Alert.alert('Ошибка', 'Не удалось загрузить протокол');
+      console.error('Error loading scenario:', error);
+      Alert.alert('Ошибка', 'Не удалось загрузить сценарий');
     } finally {
       setLoading(false);
     }
   };
 
-  const startProtocol = () => {
-    if (!protocol) return;
+  const startScenario = () => {
+    if (!scenario) return;
     
     setIsExecuting(true);
     setCurrentStep(0);
     Alert.alert(
-      'Протокол запущен',
-      `Начинаем выполнение протокола "${protocol.title}"\n\nСледуйте инструкциям пошагово.`,
+      'Сценарий запущен',
+      `Начинаем выполнение сценария "${scenario.title}"\n\nСледуйте инструкциям пошагово.`,
       [{ text: 'Начать' }]
     );
   };
 
   const nextStep = () => {
-    if (!protocol) return;
+    if (!scenario) return;
     
-    if (currentStep < (protocol.steps?.length || 0) - 1) {
+    if (currentStep < scenario.steps.length - 1) {
       setCurrentStep(currentStep + 1);
     } else {
-      // Protocol completed
+      // Scenario completed
       setIsExecuting(false);
       Alert.alert(
-        'Протокол завершен',
-        `Поздравляем! Вы успешно завершили протокол "${protocol.title}".`,
+        'Сценарий завершен',
+        `Поздравляем! Вы успешно завершили сценарий "${scenario.title}".`,
         [{ text: 'Закрыть', onPress: () => navigation.goBack() }]
       );
     }
@@ -74,15 +74,15 @@ export const ProtocolDetailScreen = () => {
   if (loading) {
     return (
       <View style={[styles.container, { backgroundColor: colors.background }]}>
-        <Text style={[styles.loadingText, { color: colors.textSecondary }]}>Загрузка протокола...</Text>
+        <Text style={[styles.loadingText, { color: colors.textSecondary }]}>Загрузка сценария...</Text>
       </View>
     );
   }
 
-  if (!protocol) {
+  if (!scenario) {
     return (
       <View style={[styles.container, { backgroundColor: colors.background }]}>
-        <Text style={[styles.errorText, { color: colors.error }]}>Протокол не найден</Text>
+        <Text style={[styles.errorText, { color: colors.error }]}>Сценарий не найден</Text>
         <TouchableOpacity 
           style={[styles.backButton, { backgroundColor: colors.card }]}
           onPress={() => navigation.goBack()}
@@ -95,24 +95,20 @@ export const ProtocolDetailScreen = () => {
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <Text style={[styles.title, { color: colors.text }]}>{protocol.title}</Text>
+      <Text style={[styles.title, { color: colors.text }]}>{scenario.title}</Text>
       
-      <View style={[styles.protocolInfo, { backgroundColor: colors.backgroundSecondary }]}>
+      <View style={[styles.scenarioInfo, { backgroundColor: colors.backgroundSecondary }]}>
         <View style={styles.infoRow}>
           <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>ID:</Text>
-          <Text style={[styles.infoValue, { color: colors.text }]}>{protocol.id}</Text>
-        </View>
-        <View style={styles.infoRow}>
-          <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>Домен:</Text>
-          <Text style={[styles.infoValue, { color: colors.text }]}>{protocol.domain}</Text>
+          <Text style={[styles.infoValue, { color: colors.text }]}>{scenario.id}</Text>
         </View>
         <View style={styles.infoRow}>
           <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>Длительность:</Text>
-          <Text style={[styles.infoValue, { color: colors.text }]}>{protocol.durationMin} мин</Text>
+          <Text style={[styles.infoValue, { color: colors.text }]}>{scenario.durationMin} мин</Text>
         </View>
         <View style={styles.infoRow}>
-          <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>Уровень:</Text>
-          <Text style={[styles.infoValue, { color: colors.text }]}>Уровень {protocol.level}</Text>
+          <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>Шагов:</Text>
+          <Text style={[styles.infoValue, { color: colors.text }]}>{scenario.steps.length}</Text>
         </View>
       </View>
       
@@ -120,7 +116,7 @@ export const ProtocolDetailScreen = () => {
         <>
           <Text style={[styles.stepsTitle, { color: colors.text }]}>Шаги выполнения</Text>
           <FlatList
-            data={protocol.steps || []}
+            data={scenario.steps}
             renderItem={({ item, index }) => (
               <View 
                 style={[styles.stepItem, { backgroundColor: colors.card, borderColor: colors.border }]}
@@ -136,16 +132,16 @@ export const ProtocolDetailScreen = () => {
           
           <TouchableOpacity 
             style={[styles.startButton, { backgroundColor: colors.primary }]}
-            onPress={startProtocol}
+            onPress={startScenario}
           >
-            <Text style={[styles.startButtonText, { color: colors.background }]}>[ Запустить протокол ]</Text>
+            <Text style={[styles.startButtonText, { color: colors.background }]}>[ Запустить сценарий ]</Text>
           </TouchableOpacity>
         </>
       ) : (
         <>
           <View style={[styles.progressContainer, { backgroundColor: colors.backgroundSecondary }]}>
             <Text style={[styles.progressText, { color: colors.text }]}>
-              Шаг {currentStep + 1} из {protocol.steps?.length || 0}
+              Шаг {currentStep + 1} из {scenario.steps.length}
             </Text>
             <View style={styles.progressBar}>
               <View 
@@ -153,7 +149,7 @@ export const ProtocolDetailScreen = () => {
                   styles.progressFill, 
                   { 
                     backgroundColor: colors.primary,
-                    width: `${((currentStep + 1) / (protocol.steps?.length || 1)) * 100}%`
+                    width: `${((currentStep + 1) / scenario.steps.length) * 100}%`
                   }
                 ]} 
               />
@@ -163,7 +159,7 @@ export const ProtocolDetailScreen = () => {
           <View style={[styles.currentStep, { backgroundColor: colors.card, borderColor: colors.border }]}>
             <Text style={[styles.stepNumberLarge, { color: colors.primary }]}>{currentStep + 1}.</Text>
             <Text style={[styles.stepTextLarge, { color: colors.text }]}>
-              {protocol.steps?.[currentStep] || ''}
+              {scenario.steps[currentStep]}
             </Text>
           </View>
           
@@ -188,7 +184,7 @@ export const ProtocolDetailScreen = () => {
               onPress={nextStep}
             >
               <Text style={[styles.navButtonText, { color: colors.background }]}>
-                {currentStep === (protocol.steps?.length || 0) - 1 ? '[ Завершить ]' : '[ Далее ]'}
+                {currentStep === scenario.steps.length - 1 ? '[ Завершить ]' : '[ Далее ]'}
               </Text>
             </TouchableOpacity>
           </View>
@@ -218,7 +214,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
   },
-  protocolInfo: {
+  scenarioInfo: {
     padding: 16,
     borderRadius: 8,
     marginBottom: 16,
@@ -333,4 +329,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProtocolDetailScreen;
+export default ScenarioDetailScreen;

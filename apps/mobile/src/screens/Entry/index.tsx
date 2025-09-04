@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useStore } from '@/store/useStore';
-import { useTheme } from '@/theming/hooks';
+import { useThemeColors } from '@/theming/hooks';
 import { useNavigation } from '@react-navigation/native';
 import { ROUTES } from '@/domain/constants';
 
 export const EntryScreen = () => {
-  const { colors } = useTheme();
+  const colors = useThemeColors();
   const navigation = useNavigation();
   const { userId, hasAssignedId, setUserId, setHasAssignedId } = useStore();
   const [localUserId, setLocalUserId] = useState<string | null>(null);
 
   // Generate a unique user ID in the format User#<XXX>
   const generateUserId = (): string => {
-    const timestamp = Date.now();
-    const hash = (timestamp % 1000).toString().padStart(3, '0');
-    return `User#${hash}`;
+    // Generate a random 3-digit number
+    const randomNumber = Math.floor(100 + Math.random() * 900);
+    return `User#${randomNumber}`;
   };
 
   useEffect(() => {
@@ -42,30 +42,21 @@ export const EntryScreen = () => {
     });
   };
 
-  // Show loading state while checking for existing ID
-  if (!localUserId && !hasAssignedId) {
-    return (
-      <View style={[styles.container, { backgroundColor: '#FFFFFF' }]}>
-        <Text style={[styles.loadingText, { color: '#000000', fontFamily: 'monospace' }]}>
-          Assigning ID...
-        </Text>
-      </View>
-    );
+  // If user already has an ID, don't show the entry screen content
+  if (hasAssignedId && userId) {
+    return null;
   }
 
   return (
-    <View style={[styles.container, { backgroundColor: '#FFFFFF' }]}>
-      <Text style={[styles.title, { color: '#000000', fontFamily: 'monospace' }]}>
-        Assigning ID...
-      </Text>
-      <Text style={[styles.userId, { color: '#000000', fontFamily: 'monospace' }]}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <Text style={[styles.userId, { color: colors.text }]}>
         {localUserId || userId}
       </Text>
-      <Text style={[styles.accessText, { color: '#000000', fontFamily: 'monospace' }]}>
+      <Text style={[styles.accessText, { color: colors.text }]}>
         Допуск предоставлен.
       </Text>
       <TouchableOpacity onPress={handleLogin} style={styles.button}>
-        <Text style={[styles.buttonText, { color: '#000000', fontFamily: 'monospace' }]}>
+        <Text style={[styles.buttonText, { color: colors.text }]}>
           [ Войти ]
         </Text>
       </TouchableOpacity>
@@ -80,19 +71,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 16,
   },
-  loadingText: {
-    fontSize: 16,
-  },
-  title: {
-    fontSize: 16,
-    marginBottom: 8,
-  },
   userId: {
     fontSize: 16,
+    fontFamily: 'monospace',
     marginBottom: 8,
   },
   accessText: {
     fontSize: 16,
+    fontFamily: 'monospace',
     marginBottom: 24,
   },
   button: {
@@ -100,6 +86,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
+    fontFamily: 'monospace',
   },
 });
 

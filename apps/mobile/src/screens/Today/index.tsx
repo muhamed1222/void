@@ -15,7 +15,8 @@ const TodayScreen = () => {
     addTask,
     completeTask,
     setContextualInstruction,
-    addCoachMessage
+    addCoachMessage,
+    setFocusTime
   } = useStore();
   
   const colors = useThemeColors();
@@ -25,6 +26,10 @@ const TodayScreen = () => {
   useEffect(() => {
     loadContextualInstruction();
     loadCoachMessages();
+    // Initialize with some default tasks if none exist
+    if (todayTasks.length === 0) {
+      initializeDefaultTasks();
+    }
   }, []);
   
   const loadContextualInstruction = async () => {
@@ -42,24 +47,92 @@ const TodayScreen = () => {
   
   const loadCoachMessages = async () => {
     try {
-      // In a real implementation, this would load messages from the coach agent
-      // For now, we'll add a placeholder message
-      const placeholderMessage: Message = {
-        id: 'coach-msg-1',
-        content: 'Не забудь сделать перерыв через 45 минут работы!',
-        role: 'coach',
-        timestamp: new Date().toISOString(),
-        type: 'reminder'
-      };
-      addCoachMessage(placeholderMessage);
+      // Only add the placeholder message if there are no messages
+      if (coachMessages.length === 0) {
+        // In a real implementation, this would load messages from the coach agent
+        // For now, we'll add a placeholder message with a unique ID
+        const placeholderMessage: Message = {
+          id: `coach-msg-${Date.now()}`, // Use timestamp to ensure unique ID
+          content: 'Не забудь сделать перерыв через 45 минут работы!',
+          role: 'coach',
+          timestamp: new Date().toISOString(),
+          type: 'reminder'
+        };
+        addCoachMessage(placeholderMessage);
+      }
     } catch (error) {
       console.error('Error loading coach messages:', error);
     }
   };
   
+  const initializeDefaultTasks = () => {
+    // Add a minimum focus time task (15-20 min)
+    const minFocusTask: TaskItem = {
+      id: 'task-min-focus',
+      title: 'Минимум фокуса (15-20 мин)',
+      domain: 'mind',
+      done: false,
+      createdAt: new Date().toISOString(),
+      estimatedDuration: 20
+    };
+    
+    // Add a book reading task
+    const bookTask: TaskItem = {
+      id: 'task-book-reading',
+      title: 'Прочитать +10 страниц',
+      domain: 'mind',
+      done: false,
+      createdAt: new Date().toISOString(),
+      estimatedDuration: 15
+    };
+    
+    // Add some regular tasks
+    const regularTask1: TaskItem = {
+      id: 'task-regular-1',
+      title: 'Завершить важный проект',
+      domain: 'mind',
+      done: false,
+      createdAt: new Date().toISOString(),
+      estimatedDuration: 60
+    };
+    
+    const regularTask2: TaskItem = {
+      id: 'task-regular-2',
+      title: 'Сделать упражнения',
+      domain: 'body',
+      done: false,
+      createdAt: new Date().toISOString(),
+      estimatedDuration: 30
+    };
+    
+    // Add tasks to store
+    addTask(minFocusTask);
+    addTask(bookTask);
+    addTask(regularTask1);
+    addTask(regularTask2);
+    
+    // Set default focus time
+    setFocusTime(0);
+  };
+  
   const handleTaskComplete = (taskId: string) => {
     completeTask(taskId);
+    // Update focus time if this was a focus task
+    const task = todayTasks.find(t => t.id === taskId);
+    if (task && task.id === 'task-min-focus') {
+      setFocusTime(focusTime + task.estimatedDuration);
+    }
     // In a real implementation, this would trigger an update to the coach agent
+  };
+  
+  const handleLowerWorkload = () => {
+    // In a real implementation, this would communicate with the coach agent
+    console.log('Lower workload requested');
+  };
+  
+  const handleRebuildPlan = () => {
+    // In a real implementation, this would communicate with the coach agent
+    console.log('Rebuild plan requested');
   };
   
   const openFullChat = () => {
@@ -71,19 +144,19 @@ const TodayScreen = () => {
     <View style={[styles.taskItem, { backgroundColor: colors.backgroundSecondary, borderColor: colors.border }]}>
       <TouchableOpacity 
         onPress={() => handleTaskComplete(item.id)}
-        disabled={item.completed}
+        disabled={item.done}
       >
         <Text style={[
           styles.taskTitle, 
           { 
-            color: item.completed ? colors.textSecondary : colors.text,
-            textDecorationLine: item.completed ? 'line-through' : 'none'
+            color: item.done ? colors.textSecondary : colors.text,
+            textDecorationLine: item.done ? 'line-through' : 'none'
           }
         ]}>
           {item.title}
         </Text>
       </TouchableOpacity>
-      {item.completed && (
+      {item.done && (
         <Text style={[styles.taskCompleted, { color: colors.success }]}>
           ✓ Завершено
         </Text>
@@ -125,6 +198,16 @@ const TodayScreen = () => {
         />
       </View>
       
+      {/* Quick Actions */}
+      <View style={[styles.section, styles.quickActionsSection]}>
+        <TouchableOpacity onPress={handleLowerWorkload} style={styles.quickActionButton}>
+          <Text style={[styles.quickActionText, { color: colors.text }]}>[ Снизить нагрузку ]</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleRebuildPlan} style={styles.quickActionButton}>
+          <Text style={[styles.quickActionText, { color: colors.text }]}>[ Пересобрать план ]</Text>
+        </TouchableOpacity>
+      </View>
+      
       {/* Progress Bar */}
       <View style={styles.section}>
         <View style={styles.progressContainer}>
@@ -135,13 +218,13 @@ const TodayScreen = () => {
                 styles.progressFill, 
                 { 
                   backgroundColor: colors.primary,
-                  width: `${(todayTasks.filter(t => t.completed).length / Math.max(todayTasks.length, 1)) * 100}%`
+                  width: `${(todayTasks.filter(t => t.done).length / Math.max(todayTasks.length, 1)) * 100}%`
                 }
               ]} 
             />
           </View>
           <Text style={[styles.progressText, { color: colors.textSecondary }]}>
-            {todayTasks.filter(t => t.completed).length} из {todayTasks.length}
+            {todayTasks.filter(t => t.done).length} из {todayTasks.length}
           </Text>
         </View>
       </View>
@@ -197,6 +280,18 @@ const styles = StyleSheet.create({
   section: {
     marginBottom: 16,
     padding: 16,
+  },
+  quickActionsSection: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 0,
+  },
+  quickActionButton: {
+    padding: 8,
+  },
+  quickActionText: {
+    fontSize: 14,
+    fontFamily: 'monospace',
   },
   sectionTitle: {
     fontSize: 18,

@@ -99,7 +99,18 @@ export const useStore = create<AppState>()(
         todayTasks: state.todayTasks.map((t) => (t.id === id ? { ...t, completed: true, completedAt: new Date().toISOString() } : t)),
       })),
       setContextualInstruction: (instruction) => set({ contextualInstruction: instruction }),
-      addCoachMessage: (message) => set((state) => ({ coachMessages: [...state.coachMessages, message] })),
+      addCoachMessage: (message) => set((state) => {
+        // Check if a message with the same ID already exists
+        const messageExists = state.coachMessages.some(msg => msg.id === message.id);
+        
+        // Only add the message if it doesn't already exist
+        if (!messageExists) {
+          return { coachMessages: [...state.coachMessages, message] };
+        }
+        
+        // If message already exists, return the current state unchanged
+        return { coachMessages: state.coachMessages };
+      }),
       setStreak: (value) => set({ streak: value }),
       setDisciplineScore: (value) => set({ disciplineScore: value }),
       setFocusTime: (minutes) => set({ focusTime: minutes }),

@@ -107,15 +107,15 @@ export class ProtocolsService {
     }
   }
   
-  // Search protocols by name or description
+  // Search protocols by title or description
   async searchProtocols(query: string): Promise<Protocol[]> {
     try {
       const protocols = await this.getAllProtocols();
       const lowerQuery = query.toLowerCase();
       return protocols.filter(
         protocol => 
-          protocol.name.toLowerCase().includes(lowerQuery) || 
-          protocol.description.toLowerCase().includes(lowerQuery)
+          protocol.title.toLowerCase().includes(lowerQuery) || 
+          (protocol.description && protocol.description.toLowerCase().includes(lowerQuery))
       );
     } catch (error) {
       console.error(`Error searching protocols for query "${query}":`, error);

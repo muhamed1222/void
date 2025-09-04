@@ -15,6 +15,8 @@ import EntryScreen from './src/screens/Entry';
 import ArchiveScreen from './src/screens/Archive';
 import DocsScreen from './src/screens/Docs';
 import StyleGuideScreen from './src/screens/StyleGuide';
+import RecordScreen from './src/screens/Record';
+import ScenarioDetailScreen from './src/screens/ScenarioDetail';
 
 // Create navigators
 const Stack = createStackNavigator();
@@ -38,6 +40,11 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen 
+            name="Entry" 
+            component={EntryScreen} 
+            options={{ headerShown: false }} 
+          />
+          <Stack.Screen 
             name="MainTabs" 
             component={MainTabs} 
             options={{ headerShown: false }} 
@@ -47,10 +54,11 @@ export default function App() {
           <Stack.Screen name="Settings" component={SettingsScreen} />
           <Stack.Screen name="Status" component={StatusScreen} />
           <Stack.Screen name="ProtocolDetail" component={ProtocolDetailScreen} />
-          <Stack.Screen name="Entry" component={EntryScreen} />
           <Stack.Screen name="Archive" component={ArchiveScreen} />
           <Stack.Screen name="Docs" component={DocsScreen} />
           <Stack.Screen name="StyleGuide" component={StyleGuideScreen} />
+          <Stack.Screen name="Record" component={RecordScreen} />
+          <Stack.Screen name="ScenarioDetail" component={ScenarioDetailScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </ThemeProvider>
