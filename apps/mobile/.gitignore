@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+web-build/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env*
+!.env.example
+
+# Build outputs
+build/
+dist/
+
+# Testing
+coverage/
+
+# Typescript
+*.tsbuildinfo
